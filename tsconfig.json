@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "noImplicitAny": true,
+    "declaration": true,
+    "module": "commonjs",
+    "moduleResolution": "node"
+  },
+  "files": [
+    "lib/index.d.ts",
+    "test/index.d.ts",
+    "typings/main.d.ts"
+  ]
+}

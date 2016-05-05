@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "npm run bundle && npm run spec",
+    "spec": "ts-node test/index.ts",
+    "bundle": "typings bundle . --out bundle",
+    "prepublish": "typings install"
+  },
+  "devDependencies": {
+    "cors": "^2.7.1",
+    "ts-node": "^0.7.2",
+    "tslint": "^3.7.4",
+    "tslint-config-typings": "^0.2.3",
+    "typescript": "^1.8.9",
+    "typings": "^0.8.1"
+  }
+}
