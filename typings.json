@@ -3,7 +3,7 @@
   "main": "lib/index.d.ts",
   "version": "^2.7.0",
   "homepage": "https://github.com/expressjs/cors",
-  "ambientDependencies": {
-    "node": "registry:dt/node#4.0.0+20160501135006"
+  "globalDependencies": {
+    "node": "registry:env/node#6.0.0+20160901015934"
   }
 }

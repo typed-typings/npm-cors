@@ -1,8 +1,8 @@
-/// <reference path="../bundle/main.d.ts" />
+/// <reference path="../bundle.d.ts" />
 
-import cors = require('cors')
-import assert = require('assert')
+import cors = require('cors');
+import assert = require('assert');
 
-const middleware = cors()
+const middleware = cors();
 
-assert.equal(typeof middleware, 'function')
+assert.equal(typeof middleware, 'function');

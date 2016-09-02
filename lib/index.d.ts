@@ -1,6 +1,6 @@
-import { ServerRequest, ServerResponse } from 'http';
+import { IncomingMessage, ServerResponse } from 'http';
 
-declare function cors (options?: cors.Options): (req: cors.Request, res: cors.Response, next: cors.NextFunction) => void;
+declare function cors (options?: cors.Options): (req: IncomingMessage, res: ServerResponse, next: (err: Error) => void) => void;
 
 declare namespace cors {
   export interface Config {
@@ -34,15 +34,7 @@ declare namespace cors {
     preflightContinue?: boolean;
   }
 
-  export type Options = Config | ((req: cors.Request, res: cors.Response) => any);
-
-  export interface Request extends ServerRequest {}
-
-  export interface Response extends ServerResponse {}
-
-  export interface NextFunction {
-    (err: Error): void
-  }
+  export type Options = Config | ((req: IncomingMessage, res: ServerResponse) => any);
 }
 
 export = cors;

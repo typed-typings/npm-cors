@@ -9,6 +9,6 @@
   "files": [
     "lib/index.d.ts",
     "test/index.d.ts",
-    "typings/main.d.ts"
+    "typings/index.d.ts"
   ]
 }
