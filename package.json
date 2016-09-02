@@ -1,5 +1,7 @@
 {
-  "private": true,
+  "name": "@types/cors",
+  "version": "2.7.0",
+  "description": "Types for https://github.com/expressjs/cors",
   "scripts": {
     "test": "npm run bundle && npm run spec",
     "spec": "ts-node test/index.ts",
